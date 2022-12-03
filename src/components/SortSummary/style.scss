@@ -1,0 +1,48 @@
+.radio-list {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 0 20px;
+  align-items: center;
+
+  .sort-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .radio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 100%;
+
+    label {
+      transform: translateY(-2px);
+    }
+
+    input {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .sort-title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .radio-item {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
