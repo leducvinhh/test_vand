@@ -8,6 +8,7 @@
   .dashed-loading {
     position: relative;
     height: 50px;
+    transform: translateX(-25px);
   }
 
   .dashed-loading:after,
